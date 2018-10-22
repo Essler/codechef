@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigInteger;
 
 class Codechef
 {
@@ -10,7 +11,7 @@ class Codechef
 		for (int t = 0; t < testCases; t++)
 		{
 		    int time = s.nextInt() - 1;
-		    int pop = (int)(Math.pow(2, time / 16));
+		    BigInteger pop = BigInteger.valueOf(2).pow(time / 16);
 		    if (time % 16 >= 8)
 		    {
 		        System.out.printf("0 0 %d\n", pop);
